@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Labotario Proteus</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{url_for('static',filename='main.css')}}"
+    />
+    <script src="{{url_for('static', filename='main.js')}}" defer></script>
+    <!-- Aqui usamos flask jinja2-->
+  </head>
+  <body>
+    <div class="sensores_container">
+      <div class="sensores">
+        <div>
+          <p id="sensor1"></p>
+          <p id="hum1"></p>
+        </div>
+        <img src="../static/img/sensor/sensor.png" class="temp">
+      </div>
+      <div class="sensores">
+       <div>
+        <p id="sensor2"></p>
+        <p id="hum2"></p>
+       </div>
+        <img src="../static/img/sensor/sensor.png" class="temp">
+      </div>
+      <div class="sensores"">
+        <div>
+          <p id="sensor3"></p>
+          <p id="hum3"></p>
+        </div>
+        <img src="../static/img/sensor/sensor.png" class="temp">
+      </div>
+      <div class="sensor-water">
+        <p id="twater"></p>
+        <img src="../static/img/sensor/temp-water.png" class="hum" >
+      </div>
+    </div>
+    <div class="promedio">
+      <div class="temperatura">
+        <img src="../static/img/sensor/temp.png" class="temp">
+        <p id="pTemp"></p>
+      </div>
+      <div class="humedad">
+        <img src="../static/img/sensor/hum.png" class="hum" >
+        <p id="pHum"></p>
+      </div>
+    </div>
+    <div class="sun"></div>
+    <div class="group-cloud">
+      <img src="../static/img/cloud/cloud1.png" class="cloud cloud1" alt="">
+      <img src="../static/img/cloud/cloud2.png" class="cloud cloud2" alt="">
+      <img src="../static/img/cloud/cloud3.png" class="cloud cloud3" alt="">
+    </div>
+    <section>
+        <div id=w1 class="wave none"></div>
+        <div id=w2 class="wave none"></div>
+        <div id=w3 class="wave none"></div>
+        <div id=w4 class="wave none"></div>
+      </section>
+  </body>
+</html>
