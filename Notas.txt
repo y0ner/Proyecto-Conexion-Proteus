@@ -1,7 +1,0 @@
-Se esta utilizando la version de python: 3.12.0
-
-cd a carpeta main DENTRO DE proyecto_ar_ConexionProteus y ejecutar 2.pip install pipenv 
-
-3. pipenv shell
-
-cd src 4. pip install -r requirements.txt
